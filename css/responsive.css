@@ -1,0 +1,54 @@
+/* responsive_Design */
+@media(min-width:320px) and (max-width:990px) {
+    header {
+        background: #0f172a;
+        padding: 8px;
+        border-top: 1px solid gray;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+        color: #fff;
+        font-weight: 600;
+        font-size: 23px;
+        margin-top: 2px;
+        margin-right: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+
+    }
+
+    .menu-icon::before {
+        content: "☰";
+    }
+
+    #menu-bar:checked+.menu-icon::before {
+        content: "X";
+        color: blue;
+    }
+
+    #menu-bar:checked+.menu-icon+.navbar {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navbar {
+        display: none;
+        margin-right: 10px;
+    }
+
+    .logo {
+        width: 100px;
+        margin-left: 10px;
+    }
+
+    #lemec {
+        margin-left: 8px;
+        font-size: 25px;
+        margin-top: 7px;
+
+    }
+
+}
