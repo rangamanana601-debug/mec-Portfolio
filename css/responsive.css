@@ -2,7 +2,7 @@
 
 /* responsive header */
 
-@media(max-width:768px) {
+@media(max-width:1000px) {
 
     .menu-btn {
         display: flex;
