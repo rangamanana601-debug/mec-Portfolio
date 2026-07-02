@@ -74,14 +74,11 @@ header {
     color: #fff;
     border: 1px solid transparent;
     padding: 10px 18px;
-    border-radius: 30px;
     transition: .35s;
 }
 .nav-links .lien:hover {
-    background: transparent;
-    border-color: #fff;
-    /* color:#2596be;                        */
-    box-shadow: 0 0 10px rgba(56, 189, 248, .5);
+    color:#2596be;
+    cursor: pointer;                       
 }
 
 /* Menu humberger */

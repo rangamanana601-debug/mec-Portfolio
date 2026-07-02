@@ -28,6 +28,11 @@
         text-align: center;
         padding: 18px;
     }
+    .nav-links .lien:hover {
+    background: transparent;
+    color: #fff;;                       
+    box-shadow: 0 0 10px rgba(56, 189, 248, .5);
+}
 
     #menu:checked~.nav-links {
         max-height: 300px;
