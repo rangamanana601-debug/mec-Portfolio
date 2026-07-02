@@ -1,54 +1,50 @@
-/* responsive_Design */
-@media(min-width:320px) and (max-width:990px) {
-    header {
-        background: #0f172a;
-        padding: 8px;
-        border-top: 1px solid gray;
+/* Media Query */
+
+/* responsive header */
+
+@media(max-width:768px) {
+
+    .menu-btn {
         display: flex;
-        justify-content: space-between;
     }
 
-    .menu-icon {
-        display: block;
-        cursor: pointer;
-        color: #fff;
-        font-weight: 600;
-        font-size: 23px;
-        margin-top: 2px;
-        margin-right: 20px;
-        font-family: Arial, Helvetica, sans-serif;
-
-    }
-
-    .menu-icon::before {
-        content: "☰";
-    }
-
-    #menu-bar:checked+.menu-icon::before {
-        content: "X";
-        color: blue;
-    }
-
-    #menu-bar:checked+.menu-icon+.navbar {
+    .nav-links {
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
         display: flex;
         flex-direction: column;
+        align-items: center;
+        background: #145369;
+        backdrop-filter: blur(20px);
+        overflow: hidden;
+        max-height: 0;
+        transition: .5s;
     }
 
-    .navbar {
-        display: none;
-        margin-right: 10px;
+    .nav-links a {
+        width: 100%;
+        text-align: center;
+        padding: 18px;
     }
 
-    .logo {
-        width: 100px;
-        margin-left: 10px;
+    #menu:checked~.nav-links {
+        max-height: 300px;
     }
 
-    #lemec {
-        margin-left: 8px;
-        font-size: 25px;
-        margin-top: 7px;
+    /* Change le menu hamberger quand on click*/
 
+    #menu:checked+.menu-btn span:nth-child(1) {
+        transform: translateY(5px) rotate(45deg);
+    }
+
+    #menu:checked+.menu-btn span:nth-child(2) {
+        opacity: 0;
+    }
+
+    #menu:checked+.menu-btn span:nth-child(3) {
+        transform: translateY(-7px) rotate(-48deg);
     }
 
 }
