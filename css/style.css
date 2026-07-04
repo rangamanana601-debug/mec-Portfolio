@@ -210,7 +210,8 @@ i:hover{
 #A_propos{
     padding: 12% 0 10% 0;
     display:flex;
-    /* justify-content:space-between; */
+    flex-direction:column;
+    /* flex-wrap:wrap; */
     background:#000;
 }
 .content_A_propos{
