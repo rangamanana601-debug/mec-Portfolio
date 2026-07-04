@@ -15,7 +15,6 @@
         width: 100%;
         display: flex;
         flex-direction: column;
-        align-items: center;
         background: #145369;
         backdrop-filter: blur(20px);
         overflow: hidden;
@@ -32,7 +31,6 @@
     .nav-links .lien:hover {
         background: transparent;
         color: #fff;
-        ;
         box-shadow: 0 0 10px rgba(56, 189, 248, .5);
     }
 
@@ -97,5 +95,15 @@
 
     img {
         margin-top: 20%;
+    }
+
+    /* A_propos responsive */
+    
+    .content_A_propos{
+        width:100%;
+        margin-left:4%; 
+    }
+    .content_A_propos .para{
+        font-size:15px;
     }
 }

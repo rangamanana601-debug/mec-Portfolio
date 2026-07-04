@@ -5,7 +5,7 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-body {
+body{
     background: #041014;
     min-height: 100vh;
 }
@@ -32,7 +32,6 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* background: #041014; */
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px);
     border-bottom: 1px solid rgba(255, 255, 255, .1);
@@ -124,15 +123,21 @@ header {
     color: #fff;
     width: 50%;
     margin-left: 10%;
+    animation: real 2s ease;
 }
-
 .Photo {
     text-align: center;
     height: max-content;
     width: max-content;
     margin-top: -60px;
-}
+    animation: real 2s ease;
 
+}
+@keyframes real {
+    from{
+         opacity:0;transform:translateY(-140px);
+}
+}
 img {
     max-width: 40%;
     max-height: 40%;
@@ -195,6 +200,42 @@ i:hover{
 }
 .para{
     margin-top:5%;
+    font-size:18px;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color:aliceblue;
+}
+
+/* section À propos */
+
+#A_propos{
+    padding: 12% 0 10% 0;
+    display:flex;
+    /* justify-content:space-between; */
+    background:#000;
+}
+.content_A_propos{
+    width:40%;
+    margin-left:10%; 
+    animation:zoom 2s linear;
+    animation-timeline:view();
+    animation-range: entry 0 cover 40%;
+}
+@keyframes zoom {
+    from{
+        opacity:0;
+        transform:scale(.15);
+
+    }
+}
+#moi{
+    background:aliceblue;
+    color:#2596be;
+}
+.content_A_propos p{
+    color:#fff;
+}
+#ENI{
+     color:#2596be;
+     font-size:18px;
+     font-weight:600;
 }
