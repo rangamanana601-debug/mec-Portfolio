@@ -130,7 +130,7 @@ header {
     height: max-content;
     width: max-content;
     margin-top: -60px;
-    animation: real 2s ease;
+    animation: real 6s ease;
 
 }
 @keyframes real {
@@ -213,7 +213,9 @@ i:hover{
     background:#000;
 }
 .content_A_propos{
-    width:40%;
+    width:80%;
+    display:flex;
+    gap:100px;
     margin-left:10%; 
     animation:zoom 2s linear;
     animation-timeline:view();
@@ -238,3 +240,16 @@ i:hover{
      font-size:18px;
      font-weight:600;
 }
+.bio{
+    width:80%;
+}
+.bio h1{
+    color:#2596be;
+}
+ul li{
+    color:#fff;
+    margin-top:2%;
+    font-weight:600;
+    list-style:none;
+}
+
