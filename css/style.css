@@ -5,13 +5,15 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-body{
+body {
     background: #041014;
     min-height: 100vh;
 }
-html{
-    scroll-behavior:smooth;
+
+html {
+    scroll-behavior: smooth;
 }
+
 /* header */
 
 header {
@@ -125,28 +127,34 @@ header {
     margin-left: 10%;
     animation: real 2s ease;
 }
+
 .Photo {
     text-align: center;
     height: max-content;
     width: max-content;
     margin-top: -60px;
-    animation: real 6s ease;
+    animation: real 2s ease;
 
 }
+
 @keyframes real {
-    from{
-         opacity:0;transform:translateY(-140px);
+    from {
+        opacity: 0;
+        transform: translateY(-140px);
+    }
 }
-}
+
 img {
     max-width: 40%;
     max-height: 40%;
-    border-radius:5%;
+    border-radius: 5%;
 }
-.btn , .icone{
+
+.btn,
+.icone {
     margin-top: 10%;
     display: flex;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
     gap: 20px;
 }
 
@@ -162,8 +170,8 @@ img {
 }
 
 #btn_2 {
-    background:#fff ;
-    color:#145369;
+    background: #fff;
+    color: #145369;
     border: none;
     border-radius: 4px;
     font-weight: 600;
@@ -171,85 +179,135 @@ img {
     margin-top: 3px;
     transition: 0.3s;
 }
+
 #btn_1:hover {
     background: #174454;
     transform: scale(0.97);
     cursor: pointer;
 }
+
 #btn_2:hover {
-    background:aliceblue;
+    background: aliceblue;
     transform: scale(0.95);
     cursor: pointer;
 }
-.icone{
-    display:flex;
-    flex-direction:column;
+
+.icone {
+    display: flex;
+    flex-direction: column;
 }
-i{
-    color:#fff;
-    font-size:20px;
-    transition:0.3s;
+
+i {
+    color: #fff;
+    font-size: 20px;
+    transition: 0.3s;
 }
-i:hover{
-    color:#145369;
-    transform:translateY(-4px) scale(1.1);
+
+i:hover {
+    color: #145369;
+    transform: translateY(-4px) scale(1.1);
 }
-.Titre{
-    font-size:37px;
-    width:150%;
+
+.Titre {
+    font-size: 37px;
+    width: 150%;
 }
-.para{
-    margin-top:5%;
-    font-size:18px;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color:aliceblue;
+
+.para {
+    margin-top: 5%;
+    font-size: 18px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: aliceblue;
 }
 
 /* section À propos */
 
-#A_propos{
+#A_propos {
     padding: 12% 0 10% 0;
-    display:flex;
-    background:#000;
-}
-.content_A_propos{
-    width:80%;
-    display:flex;
-    gap:100px;
-    margin-left:10%; 
-    animation:zoom 2s linear;
-    animation-timeline:view();
-    animation-range: entry 0 cover 40%;
-}
-@keyframes zoom {
-    from{
-        opacity:0;
-        transform:scale(.15);
-
-    }
-}
-#moi{
-    background:aliceblue;
-    color:#2596be;
-}
-.content_A_propos p{
-    color:#fff;
-}
-#ENI{
-     color:#2596be;
-     font-size:18px;
-     font-weight:600;
-}
-.bio{
-    width:80%;
-}
-.bio h1{
-    color:#2596be;
-}
-ul li{
-    color:#fff;
-    margin-top:2%;
-    font-weight:600;
-    list-style:none;
+    display: flex;
+    background: #000;
 }
 
+.content_A_propos {
+    width: 80%;
+    display: flex;
+    gap: 100px;
+    margin-left: 10%;
+}
+
+#moi {
+    background: aliceblue;
+    color: #2596be;
+}
+
+.content_A_propos p {
+    color: #fff;
+}
+
+#ENI {
+    color: #2596be;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.bio {
+    width: 80%;
+}
+
+.bio h1 {
+    color: #2596be;
+}
+
+ul li {
+    color: #fff;
+    margin-top: 2%;
+    font-weight: 600;
+    list-style: none;
+}
+
+/* Compétences */
+
+#Compétences{
+    background: #000;
+    /* display:flex; */
+}
+.Titre_compétence {
+    width:50%;
+    margin-left:10%;
+}
+.outil {
+    display: flex;
+    justify-content:space-around;
+    text-align:center;
+    margin-top:4%;
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+}
+.cmp {
+    
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border:1px solid rgba(255, 255, 255, .1);
+}
+.imglogo {
+    margin-top:4%;
+    max-width:5%;
+    max-height:5%;
+}
+.logo {
+    color: #fff;
+}
+progress {
+    width: 40%;
+    margin-top: 20px;
+    appearance: none;
+    padding: 7px;
+}
+
+progress::-webkit-progress-bar {
+    background: aliceblue;
+}
+
+progress::-webkit-progress-value {
+    background: #2596be;
+}
