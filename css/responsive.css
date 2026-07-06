@@ -99,7 +99,7 @@
     .Photo {
         width: 80%;
     }
-    
+
     /* A_propos responsive */
 
     .content_A_propos {
@@ -121,12 +121,29 @@
     }
 
     .cmp {
-        border: none;
+
+        display: flex;
+        flex-direction: column;
     }
 
-    .outil {
-        display: flex;
-        flex-wrap: wrap;
+    .Outil {
+
+        border: none;
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    .imglogo {
+        margin-top: 5%;
+        max-width: 10%;
+        max-height: 10%;
+    }
+
+    progress {
+        width: 80%;
+        margin-top: 20px;
+        appearance: none;
+        padding: 7px;
     }
 
     .Titre_compétence {
