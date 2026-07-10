@@ -126,7 +126,7 @@ header {
 .content_un {
     color: #efe6e6;
     width: 50%;
-    margin-left:10%;
+    margin-left: 10%;
     /* animation: real 2s ease; */
 }
 
@@ -148,7 +148,7 @@ header {
     max-width: 80%;
     max-height: 80%;
     margin-top: 20px;
-    margin-left:-40%;
+    margin-left: -40%;
     border-radius: 50%;
     border: 1px solid #2596be;
     box-shadow: 0 0 0 2px #174454;
@@ -157,10 +157,10 @@ header {
 
 .btn,
 .icone {
+    /* background:gray; */
+    padding: 3%;
     margin-top: 10%;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
+    gap: 39px;
 }
 
 #btn_1 {
@@ -175,6 +175,7 @@ header {
 }
 
 #btn_2 {
+    margin-left: 5%;
     background: #fff;
     color: #145369;
     border: none;
@@ -239,12 +240,14 @@ header {
     gap: 100px;
     margin-left: 10%;
 }
+
 .note {
     border-radius: 20px;
     width: 100%;
     border: 1px solid #2596be;
     box-shadow: 0 0 0 2px #174454;
 }
+
 .app {
     display: flex;
     gap: 10%;
@@ -257,6 +260,7 @@ header {
     margin-top: 10px;
     font-size: 19px;
 }
+
 .icon {
     color: rgb(222, 225, 228);
     background: #145369;
@@ -284,10 +288,10 @@ header {
 
 #Compétences {
     background: #000;
-    /* display:flex; */
+    padding: 0 0 5% 0;
 }
 
-.Titre_compétence {
+.Titre_C {
     width: 50%;
     margin-left: 10%;
 }
@@ -295,20 +299,20 @@ header {
 .Outil {
 
     width: 30%;
-    border-radius:10px;
+    border-radius: 10px;
     border: 1px solid rgba(255, 255, 255, .1);
 }
 
 .cmp {
     display: flex;
-    gap:4%;
-    /* justify-content: space-between; */
+    gap: 4%;
     text-align: center;
     margin-top: 3%;
-    margin-left:2%;
+    margin-left: 2%;
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px);
 }
+
 .imglogo {
     margin-top: 10%;
     max-width: 20%;
@@ -332,4 +336,113 @@ progress::-webkit-progress-bar {
 
 progress::-webkit-progress-value {
     background: #2596be;
+}
+
+/* Contact */
+#Contact {
+    padding: 5% 0 5% 0;
+    background: #000;
+}
+
+form {
+    width:60%;
+    margin-top: 5%;
+    margin-left:5%;
+    text-align: center;
+}
+
+.input-groupe{
+    display: flex;
+    gap: 2%;
+    padding: 10px;
+}
+
+input {
+    padding: 10px;
+    width:80%;
+    color:#fff;
+    border:1px solid rgba(255, 255, 255, .1);
+    border-radius: 5px;
+    color: #fff;
+    outline: none;
+    background:transparent;
+    transition:0.5s;
+}
+textarea {
+    width:100%;
+    max-width:98%;
+    min-height:150px;
+    /* box-sizing:border-box; */
+    /* resize:vertical; */
+    background: transparent;
+    color: #fff;
+    border:1px solid rgba(255, 255, 255, .1);
+    outline: none;
+    border-radius: 5px;
+    transition:0.5s;
+    cursor:text;
+}
+
+.submit {
+    width: 98%;
+    background: #145369;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-weight: 600;
+    padding: 10px;
+    margin-top: 3px;
+    transition: 0.3s;
+    cursor:pointer;
+}
+textarea:hover {
+    border: 1px solid #2596be;
+    box-shadow: 0 0 0 2px #174454
+}
+input:hover {
+    border: 1px solid #2596be;
+    box-shadow: 0 0 0 2px #174454;
+    cursor:text;
+}
+.submit:hover {
+    background: #174454;
+    transform: scale(0.99);
+    cursor: pointer;
+
+}
+.info{
+    display:flex;
+    gap:5%;
+}
+.réseau{
+    margin-top:5%;
+    display:flex;
+    gap:10%;
+    flex-direction:column;
+}
+.me_contacter{
+    padding:5%;
+    width:120%;
+    border-radius:10px;
+    border:1px solid rgba(255, 255, 255, .1);
+    display:flex;
+    gap:10%;
+    transition:1s;
+}
+.me_contacter:hover{
+    transform:translateY(1px) scale(1.05);
+    border: 1px solid #2596be;
+    box-shadow: 0 0 0 2px #174454;
+}
+.final{
+    margin-top:10%;
+    text-align:left;
+    margin-left:10%;
+}
+footer{
+    border-top:1px solid rgba(255, 255, 255, .1);
+    background:#000;
+    padding:2%;
+    text-align:center;
+    color:#efe6e6;
 }
