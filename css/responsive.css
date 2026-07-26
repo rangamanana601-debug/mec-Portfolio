@@ -163,7 +163,7 @@
         margin-top: -40px;
         width: 95%;
         margin-left: 1%;
-        height: 20%;
+        height: 24%;
     }
 
     /* Compétence_responsive */
@@ -218,18 +218,19 @@
     hr {
         width: 50%;
         border: 1px solid rgba(255, 255, 255, .1);
-        margin-left:4%;
+        margin-left: 4%;
     }
 
     .invention {
-        margin-top:-20%;
-        margin-left:8%;
-        
+        margin-top: -20%;
+        margin-left: 8%;
+
     }
+
     .invention p {
         /* color:gray; */
-        margin-left:8%;
-        padding:4%;
+        margin-left: 8%;
+        padding: 4%;
     }
 
     /* responsive_Contact */
