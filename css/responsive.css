@@ -130,12 +130,10 @@
     .bio_descr {
         margin-left: 10px;
         border-bottom: 1px solid rgba(255, 255, 255, .1);
-        ;
-
     }
 
     #envelope {
-        /* display: none; */
+        display: none;
     }
 
     .content_A_propos .para {
