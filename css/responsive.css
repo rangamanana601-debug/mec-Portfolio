@@ -312,6 +312,6 @@
 @media (min-width : 1920px){
     .note{
         /* display:none; */
-        height:85%;
+        height:100%;
     }
 }
