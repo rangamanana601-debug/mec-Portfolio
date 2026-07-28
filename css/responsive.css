@@ -7,7 +7,6 @@
     .menu-btn {
         display: flex;
     }
-
     .nav-links {
         position: absolute;
         top: 60px;
@@ -21,11 +20,17 @@
         max-height: 0;
         transition: .5s;
     }
-
+    #btn_contact{
+        background:#000;
+        margin-bottom:10px;
+    }
+    #btn_contact:hover{
+        background:#222;
+    }
     .nav-links a {
-        width: 100%;
+        /* width: 100%; */
         text-align: center;
-        padding: 18px;
+        padding:0;
     }
 
     .nav-links .lien:hover {
@@ -130,7 +135,7 @@
     }
 
     #envelope {
-        display: none;
+        /* display: none; */
     }
 
     .content_A_propos .para {
