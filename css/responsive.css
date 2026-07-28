@@ -309,7 +309,7 @@
         justify-content: space-around;
     }
 }
-@media (min-width : 1920px){
+@media (min-width :1496px){
     .note{
         /* display:none; */
         height:100%;
