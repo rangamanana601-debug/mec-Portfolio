@@ -309,3 +309,9 @@
         justify-content: space-around;
     }
 }
+@media (min-width : 1920px){
+    .note{
+        /* display:none; */
+        height:70%;
+    }
+}
