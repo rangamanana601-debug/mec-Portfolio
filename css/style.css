@@ -12,6 +12,18 @@ body {
     scrollbar-color: red;
 }
 
+@keyframes slide {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -25,7 +37,9 @@ header {
     width: 100%;
     z-index: 1000;
 }
-
+#Hero:target~header .nav-links .lien[href="Hero"]{
+    color:red;
+}
 /* navbar */
 
 .navbar {
@@ -130,12 +144,15 @@ header {
     width: 50%;
     margin-top: 1%;
     margin-left: 6%;
+    animation: slide linear;
+    animation-timeline: view();
+    animation-range-start: cover 0%;
+    animation-range-end: cover 30%;
 }
 
 .Photo {
     width: 50%;
     text-align: center;
-
 }
 
 #mec {
@@ -200,13 +217,11 @@ header {
 .sui {
     color: #fff;
     font-size: 25px;
-    backdrop-filter: blur(9px);
     transition: 0.3s;
 }
 
 #sui {
     padding: 1% 0 3%;
-    /* color: #fff; */
     font-size: 25px;
     transition: 0.3s;
 }
@@ -219,6 +234,10 @@ header {
 .Titre {
     font-size: 37px;
     width: 150%;
+    animation: slide linear;
+    animation-timeline: view();
+    animation-range-start: cover 0%;
+    animation-range-end: cover 30%;
 }
 
 .para {
@@ -241,6 +260,10 @@ header {
     display: flex;
     gap: 100px;
     margin-left: 8%;
+    animation: slide linear;
+    animation-timeline: view();
+    animation-range-start: cover 0%;
+    animation-range-end: cover 30%;
 }
 
 .note {
@@ -251,6 +274,10 @@ header {
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px);
     border: 1px solid rgba(255, 255, 255, .1);
+    animation: slide linear;
+    animation-timeline: view();
+    animation-range-start: cover 0%;
+    animation-range-end: cover 30%;
 }
 
 .app {
@@ -281,12 +308,20 @@ header {
 
 .content_A_propos p {
     color: rgb(182, 179, 179);
+    animation: slide linear;
+    animation-timeline: view();
+    animation-range-start: cover 0%;
+    animation-range-end: cover 30%;
 }
 
 #ENI {
     color: #2596be;
     font-size: 18px;
     font-weight: 600;
+    animation: slide linear;
+    animation-timeline: view();
+    animation-range-start: cover 0%;
+    animation-range-end: cover 30%;
 }
 
 .Bio {
@@ -297,27 +332,33 @@ header {
     padding: 10px;
     display: flex;
     color: white;
-    /* text-align:center; */
     background: rgba(255, 255, 255, .1);
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px);
     border: 1px solid rgba(255, 255, 255, .1);
+    animation: slide linear;
+    animation-timeline: view();
+    animation-range-start: cover 0%;
+    animation-range-end: cover 30%;
 }
 
 .bio_desc {
-    /* width:40px; */
-    /* background:red; */
-    /* border-left: 1px solid rgba(255, 255, 255, .1); */
     border-bottom: 1px solid rgba(255, 255, 255, .1);
     margin-left: 20px;
     padding: 10px 10px;
+    animation: slide linear;
+    animation-timeline: view();
+    animation-range-start: cover 0%;
+    animation-range-end: cover 30%;
 }
 
 .bio_descr {
-    /* background:red; */
-    /* border-right: 1px solid rgba(255, 255, 255, .1); */
     margin-left: 20px;
     padding: 10px 10px;
+    animation: slide linear;
+    animation-timeline: view();
+    animation-range-start: cover 0%;
+    animation-range-end: cover 30%;
 }
 
 .top {
@@ -332,9 +373,13 @@ header {
     opacity: 0.7;
     width: 35%;
     margin-top: -7%;
-    margin-left: 9%;
+    margin-left: 25%;
     position: absolute;
     height: auto;
+    animation: slide linear;
+    animation-timeline: view();
+    animation-range-start: cover 0%;
+    animation-range-end: cover 30%;
 }
 
 .envelope {
@@ -359,6 +404,10 @@ header {
 .Titre_C {
     width: 50%;
     margin-left: 10%;
+    animation: slide linear;
+    animation-timeline: view();
+    animation-range-start: cover 0%;
+    animation-range-end: cover 30%;
 }
 
 .Outil {
@@ -366,6 +415,10 @@ header {
     border-radius: 10px;
     border: 1px solid rgba(255, 255, 255, .1);
     transition: 0.7s ease;
+    animation: slide linear;
+    animation-timeline: view();
+    animation-range-start: cover 0%;
+    animation-range-end: cover 30%;
 }
 
 .Outil:hover {
@@ -383,12 +436,20 @@ header {
     margin-left: 2%;
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px);
+    animation: slide linear;
+    animation-timeline: view();
+    animation-range-start: cover 0%;
+    animation-range-end: cover 30%;
 }
 
 .imglogo {
     margin-top: 10%;
     max-width: 20%;
     max-height: 20%;
+    animation: slide linear;
+    animation-timeline: view();
+    animation-range-start: cover 0%;
+    animation-range-end: cover 30%;
 }
 
 .logo {
@@ -430,18 +491,28 @@ hr {
     width: 50%;
     border: 1px solid rgba(255, 255, 255, .1);
     margin-left: 10%;
+    animation: slide linear;
+    animation-timeline: view();
+    animation-range-start: cover 0%;
+    animation-range-end: cover 30%;
 }
 
 .invention {
-    /* background:gray; */
     margin-left: 13%;
     margin-top: -19%;
+    animation: slide linear;
+    animation-timeline: view();
+    animation-range-start: cover 0%;
+    animation-range-end: cover 30%;
 }
 
 .invention p {
-    /* color:gray; */
     margin-left: 15%;
     padding: 4%;
+    animation: slide linear;
+    animation-timeline: view();
+    animation-range-start: cover 0%;
+    animation-range-end: cover 30%;
 }
 
 .inv {
@@ -454,8 +525,6 @@ hr {
 
 #Projets {
     background: #000;
-    background-position: center;
-    background: cover;
     padding: 5% 0;
 }
 
@@ -466,7 +535,6 @@ hr {
     gap: 30px;
     justify-content: center;
     flex-wrap: wrap;
-
 }
 
 .card {
@@ -476,6 +544,10 @@ hr {
     border: 1px solid rgba(255, 255, 255, .1);
     transition: .4s;
     background: #0d1d23;
+    animation: slide linear;
+    animation-timeline: view();
+    animation-range-start: cover 0%;
+    animation-range-end: cover 30%;
 }
 
 .card:hover {
@@ -497,15 +569,22 @@ hr {
 .project-content h3 {
     color: white;
     margin-bottom: 15px;
+    animation: slide linear;
+    animation-timeline: view();
+    animation-range-start: cover 0%;
+    animation-range-end: cover 30%;
 }
 
 .project-content p {
     color: #d6d6d6;
     margin-bottom: 20px;
+    animation: slide linear;
+    animation-timeline: view();
+    animation-range-start: cover 0%;
+    animation-range-end: cover 30%;
 }
 
 #site {
-    /* background:#145369; */
     color: #bdbdbd;
     margin-top: 10px;
 }
@@ -522,10 +601,13 @@ form {
     margin-top: 5%;
     margin-left: 13%;
     text-align: center;
+    animation: slide linear;
+    animation-timeline: view();
+    animation-range-start: cover 0%;
+    animation-range-end: cover 5%;
 }
 
 .input-groupe {
-    /* display:flex; */
     gap: 3%;
     padding: 10px;
 }
@@ -536,7 +618,10 @@ form {
     text-align: left;
     flex-direction: column;
     padding: 1%;
-    /* margin-left:-10%; */
+    animation: slide linear;
+    animation-timeline: view();
+    animation-range-start: cover 0%;
+    animation-range-end: cover 10%;
 }
 
 input {
@@ -550,6 +635,10 @@ input {
     outline: none;
     background: rgba(255, 255, 255, .1);
     transition: 0.5s;
+    animation: slide linear;
+    animation-timeline: view();
+    animation-range-start: cover 0%;
+    animation-range-end: cover 10%;
 }
 
 textarea {
@@ -565,19 +654,27 @@ textarea {
     transition: 0.5s;
     cursor: text;
     padding: 2%;
+    animation: slide linear;
+    animation-timeline: view();
+    animation-range-start: cover 0%;
+    animation-range-end: cover 10%;
 }
 
 .submit {
-    width: 98%;
+    width: 95%;
     background: #145369;
     color: #fff;
     border: none;
     border-radius: 4px;
     font-weight: 600;
     padding: 10px;
-    margin-top: 3px;
+    margin-top: 9px;
     transition: 0.3s;
     cursor: pointer;
+    animation: slide linear;
+    animation-timeline: view();
+    animation-range-start: cover 0%;
+    animation-range-end: cover 10%;
 }
 
 textarea:hover {
@@ -606,6 +703,10 @@ input:hover {
     display: flex;
     gap: 3%;
     flex-direction: column;
+    animation: slide linear;
+    animation-timeline: view();
+    animation-range-start: cover 0%;
+    animation-range-end: cover 30%;
 }
 
 .me_contacter {
@@ -617,11 +718,23 @@ input:hover {
     display: flex;
     gap: 5%;
     transition: 1s;
+    /* animation: slide linear;
+    animation-timeline: view();
+    animation-range-start: cover 0%;
+    animation-range-end: cover 3%; */
 }
 
 .me_contacter p {
     color: gray;
     padding: 2%;
+    animation: slide linear;
+    animation-timeline: view();
+    animation-range-start: cover 0%;
+    animation-range-end: cover 30%;
+    animation: slide linear;
+    animation-timeline: view();
+    animation-range-start: cover 0%;
+    animation-range-end: cover 20%;
 }
 
 .me_contacter a {
@@ -642,6 +755,10 @@ input:hover {
     margin-top: 10%;
     text-align: left;
     margin-left: 10%;
+    animation: slide linear;
+    animation-timeline: view();
+    animation-range-start: cover 0%;
+    animation-range-end: cover 30%;
 }
 
 footer {
