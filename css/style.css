@@ -202,7 +202,12 @@ header {
     font-size: 25px;
     transition: 0.3s;
 }
-
+#sui {
+    padding:1% 1%;
+    /* color: #fff; */
+    font-size: 25px;
+    transition: 0.3s;
+}
 .sui:hover {
     color: #145369;
     transform: translateY(-4px) scale(1.1);
@@ -238,8 +243,8 @@ header {
 .note {
     border-radius: 20px;
     width: 100%;
-    height: 47%;
-    background: rgba(255, 255, 255, .1);
+    height:57%;
+    /* background: rgba(255, 255, 255, .1); */
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px);
     border: 1px solid rgba(255, 255, 255, .1);
@@ -321,10 +326,16 @@ header {
 }
 
 #envelope {
-    max-width: 100%;
-    max-height: 100%;
+    opacity:0.7;
+    width:35%;
+    margin-top:-7%;
+    margin-left:9%;
+    position:absolute;
+    height:auto;
 }
-
+.envelope{
+    width:60%;
+}
 .bio_desc h3 {
     padding: 10px;
 }
