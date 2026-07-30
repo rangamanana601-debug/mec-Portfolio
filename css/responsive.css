@@ -139,11 +139,13 @@
     .content_A_propos .para {
         font-size: 15px;
     }
-    #envelope{
-        display:none;
-    }  
+
+    #envelope {
+        display: none;
+    }
+
     .app {
-        gap:3%;
+        gap: 3%;
     }
 
     .app p {
@@ -155,13 +157,16 @@
         padding: 2%;
     }
 
-    .note {
-        border-radius: 10px;
-        width:90%;
-        
-        /* margin-bottom:190%; */
-        margin-left: -3%;
+    #A_propos {
+        /* padding: 1% 0 75% 0; */
     }
+
+    .note {
+        border: none;
+        backdrop-filter: blur(0);
+        /* margin-left: -3%; */
+    }
+
     /* Compétence_responsive */
 
     #Compétences {
@@ -316,10 +321,10 @@
     .note {
         /* margin-top:-2%M; */
         height: 50%;
-        width:150%;
+        width: 150%;
     }
 
-.icon{
-    height:10%;
-}
+    .icon {
+        height: 10%;
+    }
 }

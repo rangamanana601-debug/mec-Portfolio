@@ -129,7 +129,7 @@ header {
     color: #efe6e6;
     width: 50%;
     margin-top: 1%;
-    margin-left: 9%;
+    margin-left: 6%;
 }
 
 .Photo {
@@ -203,7 +203,7 @@ header {
     transition: 0.3s;
 }
 #sui {
-    padding:1% 1%;
+    padding:1% 0 3%;
     /* color: #fff; */
     font-size: 25px;
     transition: 0.3s;
@@ -237,13 +237,13 @@ header {
     width: 80%;
     display: flex;
     gap: 100px;
-    margin-left: 9%;
+    margin-left: 8%;
 }
 
 .note {
     border-radius: 20px;
     width: 100%;
-    height:57%;
+    height:max-content;
     /* background: rgba(255, 255, 255, .1); */
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px);
@@ -548,7 +548,7 @@ input {
 textarea {
     background: rgba(255, 255, 255, .1);
     width: 97%;
-    max-width: 98%;
+    max-width: 95%;
     min-height: 150px;
     color: #fff;
     border: 1px solid rgba(255, 255, 255, .1);
