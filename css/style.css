@@ -200,14 +200,17 @@ header {
 .sui {
     color: #fff;
     font-size: 25px;
+    backdrop-filter: blur(9px);
     transition: 0.3s;
 }
+
 #sui {
-    padding:1% 0 3%;
+    padding: 1% 0 3%;
     /* color: #fff; */
     font-size: 25px;
     transition: 0.3s;
 }
+
 .sui:hover {
     color: #145369;
     transform: translateY(-4px) scale(1.1);
@@ -243,7 +246,7 @@ header {
 .note {
     border-radius: 20px;
     width: 100%;
-    height:max-content;
+    height: max-content;
     /* background: rgba(255, 255, 255, .1); */
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px);
@@ -326,16 +329,18 @@ header {
 }
 
 #envelope {
-    opacity:0.7;
-    width:35%;
-    margin-top:-7%;
-    margin-left:9%;
-    position:absolute;
-    height:auto;
+    opacity: 0.7;
+    width: 35%;
+    margin-top: -7%;
+    margin-left: 9%;
+    position: absolute;
+    height: auto;
 }
-.envelope{
-    width:60%;
+
+.envelope {
+    width: 60%;
 }
+
 .bio_desc h3 {
     padding: 10px;
 }
@@ -524,14 +529,16 @@ form {
     gap: 3%;
     padding: 10px;
 }
-.inp_label{
-    color:#d4d1d1;
-    display:flex;
+
+.inp_label {
+    color: #d4d1d1;
+    display: flex;
     text-align: left;
-    flex-direction:column;
-    padding:1%;
+    flex-direction: column;
+    padding: 1%;
     /* margin-left:-10%; */
 }
+
 input {
     padding: 3%;
     width: 100%;
@@ -638,7 +645,7 @@ input:hover {
 }
 
 footer {
-    position-anchor:fixed;
+    position-anchor: fixed;
     backdrop-filter: blur(9px);
     -webkit-backdrop-filter: blur(15px);
     border-top: 1px solid rgba(255, 255, 255, .1);
@@ -647,6 +654,7 @@ footer {
     text-align: center;
     color: #efe6e6;
 }
+
 .mention h5 {
     margin: 10px;
 }
