@@ -750,7 +750,10 @@ input:hover {
     width: 35%;
     margin: 1% 9%;
 }
-
+#fuser{
+    transform:rotate(20deg);
+    margin:1%;
+}
 .final {
     margin-top: 10%;
     text-align: left;
