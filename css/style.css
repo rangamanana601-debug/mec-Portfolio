@@ -27,7 +27,15 @@ body {
 html {
     scroll-behavior: smooth;
 }
-
+::-webkit-scrollbar{
+    width:12px;
+}
+::-webkit-scrollbar-thumb{
+    background: #145369;
+}
+::-webkit-scrollbar-track{
+    background:#fff;
+}
 /* header */
 
 header {
